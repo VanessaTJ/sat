@@ -176,16 +176,6 @@ public class VentanaIncidencia extends JFrame{
 		Incidencias.menuUsuariosSat();
 		add(personalSatcb); 
 		
-
-		/*personalSatRegislb=new JLabel("personalSat");
-		personalSatRegislb.setBounds(450,180,80,20);
-		add(personalSatRegislb);
-		
-		personalSatcb = new JComboBox();
-		personalSatcb.setBounds(450+90,180,235,20);
-		Incidencias.menuUsuariosSat();
-		add(personalSatcb);*/
-
 		
 		//etiquetas y combobox de la fecha 
 		
@@ -242,16 +232,6 @@ public class VentanaIncidencia extends JFrame{
 		añadirRegisbu.setBackground(new Color(100,224,224));
 		add(añadirRegisbu);
 		añadirRegisbu.addActionListener(this);
-		
-		
-		/*duracionRegis= new JLabel("Duracion");
-		duracionRegis.setBounds(20,555,100,40);
-		add(duracionRegis);
-
-		duracionRegisLl = new JTextArea();
-		duracionRegisLl.setBackground(new Color(224,224,224));
-		duracionRegisLl.setBounds(20,590,80,20); 
-		add(duracionRegisLl);*/
 		
 		descripcionlb= new JLabel("Descripción");
 		descripcionlb.setBounds(10,555,100,40);
@@ -314,17 +294,8 @@ public class VentanaIncidencia extends JFrame{
 		add(actualizarBd);
 		actualizarBd.addActionListener(this);
 		
-    	
-		//al recoger los datos seleccionados de la fecha del combobox concatenarlos y pasarlos a un String
-		//la fecha inicial pasarla a un String nada más recogerla
-
-		//descripcionta = new JTextArea();
-		//descripcionta.setBackground(new Color(224,224,224));
-		//descripcionta.setBounds(140,440,520,20); 
-		//add(descripcionta);
 		
 	} //fin del panel
-
 
 		@Override
 			public void actionPerformed(ActionEvent e){
@@ -346,29 +317,17 @@ public class VentanaIncidencia extends JFrame{
 						emailnuevo,						 
 						(String)iddepartcb.getSelectedItem(),
 						(String)iddelegcb.getSelectedItem());}
-				
-			////////////////////////////////////////////////////////////////////////////////
-			///////////////////////////////////////////////////////////////////////////////
-			///ERROR A LA HORA DE INSERTAR MIRAR BIEN QUE PASA////
-			///////////////////////////////////////////////////////////////////////////////
-			///////////////////////////////////////////////////////////////////////////////
-				
+
+			
 		if (botonPulsado == selectbt){
 			PanelNuevo paneles = new PanelNuevo();
 			consultar(paneles);
-			
 			}
 		
 		if (botonPulsado == actualizarBd){
 			VentanaPrincipal.conexion = new basedatos.ConexionBaseDatos(VentanaPrincipal.bd, VentanaPrincipal.usuario, VentanaPrincipal.pwd);
-		}
-		
-		
-		
-		
-			
-			
-			
+			}
+
 		            	}//FIN DEL ACTION
 	
 		public ResultSet consultar(PanelNuevo paneles){
