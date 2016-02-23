@@ -244,22 +244,22 @@ public class VentanaIncidencia extends JFrame{
 		añadirRegisbu.addActionListener(this);
 		
 		
-		duracionRegis= new JLabel("Duracion");
+		/*duracionRegis= new JLabel("Duracion");
 		duracionRegis.setBounds(20,555,100,40);
 		add(duracionRegis);
 
 		duracionRegisLl = new JTextArea();
 		duracionRegisLl.setBackground(new Color(224,224,224));
 		duracionRegisLl.setBounds(20,590,80,20); 
-		add(duracionRegisLl);
+		add(duracionRegisLl);*/
 		
 		descripcionlb= new JLabel("Descripción");
-		descripcionlb.setBounds(140,555,100,40);
+		descripcionlb.setBounds(10,555,100,40);
 		add(descripcionlb);
 
 		detalletext = new JTextArea();
 		detalletext.setBackground(new Color(224,224,224));
-		detalletext.setBounds(140,590,450,80); 
+		detalletext.setBounds(10,590,450,80); 
 		add(detalletext);
 		
 		
@@ -308,9 +308,9 @@ public class VentanaIncidencia extends JFrame{
         col4.setPreferredWidth(200);
         add(scrollArea);
         
-        actualizarBd = new JButton("AÑADIR");
-        actualizarBd.setBounds(600,400,80,20);
-        actualizarBd.setBackground(new Color(100,224,224));
+        actualizarBd = new JButton("Actualizar bd");
+        actualizarBd.setBounds(550,590,120,20);
+        actualizarBd.setBackground(new Color(90,224,224));
 		add(actualizarBd);
 		actualizarBd.addActionListener(this);
 		
@@ -358,6 +358,10 @@ public class VentanaIncidencia extends JFrame{
 			consultar(paneles);
 			
 			}
+		
+		if (botonPulsado == actualizarBd){
+			VentanaPrincipal.conexion = new basedatos.ConexionBaseDatos(VentanaPrincipal.bd, VentanaPrincipal.usuario, VentanaPrincipal.pwd);
+		}
 		
 		
 		
