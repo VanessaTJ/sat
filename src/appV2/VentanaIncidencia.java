@@ -200,7 +200,8 @@ public class VentanaIncidencia extends JFrame{
 		modificarbu.addActionListener(this);
     	
 		insertarbt = new JButton("Insertar");
-		insertarbt.setBounds(450,650,120,20);
+		insertarbt.setBounds(465,650,120,20);
+		insertarbt.setBackground(new Color(100,224,224));
 		insertarbt.addActionListener(this);
     	add(insertarbt);			
 
