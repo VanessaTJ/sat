@@ -10,7 +10,7 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 
-import appdecasa.ConexionBaseDatos2;
+
 
 public class VentanaIncidencia extends JFrame{
 
