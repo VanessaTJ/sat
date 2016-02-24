@@ -33,20 +33,20 @@ public class Incidencias {
 		private String aula;
 		private int idCurso;
 
-	/*
-	public static void menuIDDelegaciones(){
+	
+	public static void cargarComboDeleg(){
 		ResultSet filas = null;
-		filas = ConexionBaseDatos2.conexion.getQuery("SELECT Dirección FROM delegacion");
+		filas = ((ConexionBaseDatos2) ConexionBaseDatos2.conexion).getQuery("SELECT Dirección FROM delegacion");
 		try {
 			while(filas.next()){
-				PanelNuevo.iddelegcb.addItem(filas.getString("Dirección"));
+				PanelNuevo.delegcb.addItem(filas.getString("Dirección"));
 				
 			}
 		}
 		catch (SQLException e) {e.printStackTrace();
 		}
 	}
-	
+	/*
 	public static void menuIDDepartamento(){
 		filas = VentanaPrincipal.conexion.getQuery("SELECT nomDepartamento FROM departamento");
 		try {

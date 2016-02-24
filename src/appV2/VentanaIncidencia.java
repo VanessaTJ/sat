@@ -3,6 +3,8 @@ package appV2;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.sql.*;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -10,6 +12,7 @@ import javax.swing.table.TableColumn;
 
 public class VentanaIncidencia extends JFrame{
 
+	
 	public VentanaIncidencia() {
 		 
 		Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/ucsIcon.gif"));
@@ -32,9 +35,9 @@ public class VentanaIncidencia extends JFrame{
 	   System.out.println("Cerrando la conexión...");
 	    conexion.cerrarConexion();
 	    System.exit(0);
-	  }*/
+	  }
 		
-	}
+	}*/
 
 	class PanelNuevo extends JPanel implements ActionListener {
 
@@ -44,7 +47,9 @@ public class VentanaIncidencia extends JFrame{
 		
 		public JLabel idinclb,iddetlb,usuariolb,teleflb,emaillb,deleglb, tipolb, resueltalb,descripcionlb;
 		public JTextField mastx,idinctx,iddettx,usuariotx,teleftx,emailtx;
-		public JComboBox delegcb,tipocb,resueltacb;
+		public static JComboBox delegcb;
+		public JComboBox tipocb;
+		public JComboBox resueltacb;
 		public JButton masbu, modificarbu,insertarbt;
 		public JTextArea mensajeSalida, descriptext;
 		
