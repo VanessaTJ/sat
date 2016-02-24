@@ -10,6 +10,8 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 
+import appdecasa.ConexionBaseDatos2;
+
 public class VentanaIncidencia extends JFrame{
 
 	
@@ -236,7 +238,52 @@ public class VentanaIncidencia extends JFrame{
 			}
 			catch (SQLException e) {e.printStackTrace();
 			}
-		}*/
+		}
+		
+		*
+		*
+		*
+		*
+		*
+		*
+		* if (botonPulsado==masbu) {
+	            	 /*para mostrar sólo los 50 últimos resultados de la base de datos
+	            	  * int final DEFECTO50 =50;
+	            	 if (mastx==""){"SELECT * FROM principal ORDER BY idprincipal DESC LIMIT" + DEFECTO50}
+	            	 else 
+	            	 "SELECT * FROM principal ORDER BY idprincipal DESC LIMIT" + (int)mastx
+	            	 
+	             
+	            	 textareaconsulta.setText(Articulo.consultaArticulo());}
+	            	 
+	            	 
+	            	 
+	            	 
+	            	 
+	            	 
+	            	 
+	            	 
+	       public static String insertar(int idIncid,	String idDetalle,	String fecha,	String usuario,	int telefono, String email, 
+	String delegacion, String tipo, String resuelta, String descripcion){
+		
+		boolean ok = false;
+		String resultado = null;
+		try {
+				ok = ConexionBaseDatos2.conexion.setQuery("INSERT INTO principal(idIncid, idDetalle, fecha, usuario, telefono, email, delegacion, tipo,	resuelta, descripcion)"
+						+ "	 VALUES (" + idIncid + ","+ idDetalle+",'"+ fecha + "','"+ usuario	+"',"+ telefono +",'"+ email+"','"+ delegacion +
+						"','" + resuelta +"','"+"'descripcion')");
+				if(ok){
+					
+				JOptionPane.showMessageDialog(null, "Se insertó el registro ");	}
+				else
+					
+				JOptionPane.showMessageDialog(null, "No se insertó el registro ");
+					
+			} 
+		catch(Exception e){ e.printStackTrace(); }
+		return resultado;}
+		
+	            	 */
 		
 		//creo las acciones
 		 public void actionPerformed(ActionEvent e) {
