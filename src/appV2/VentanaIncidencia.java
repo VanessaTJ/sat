@@ -39,7 +39,7 @@ public class VentanaIncidencia extends JFrame{
 		
 	}*/
 
-	class PanelNuevo extends JPanel implements ActionListener {
+	static class PanelNuevo extends JPanel implements ActionListener {
 
 		private JTable tblincidencias = null;
 		DefaultTableModel modelo = null;
@@ -242,31 +242,10 @@ public class VentanaIncidencia extends JFrame{
 		 public void actionPerformed(ActionEvent e) {
 	         	Object botonPulsado = e.getSource();
 	         	
-	             if (botonPulsado==consultar) {
-	            	 textareaconsulta.setText(Articulo.consultaArticulo());}
-	             
-	             if (botonPulsado==insertarbt) {
-	            	 textareaconsulta.setText(Articulo.insertarArticulo(textfield2.getText(), textfield3.getText()));}
-	             
-	             if (botonPulsado==modificarbu) {
-	            	 textareaconsulta.setText(Articulo.modificarArticulo(textfield2.getText(), textfield3.getText()));}
-	            	 
-	             if (botonPulsado==borrar) {
-	            	 textareaconsulta.setText(Articulo.borrarArticulo(textfield1.getText()));}
-	             
-	             if (botonPulsado==limpiar) {
-	            	 textfield1.setText("");
-	            	 textfield2.setText("");
-	            	 textfield3.setText("");
-	            	 textareaconsulta.setText("");}
-	             
-	             if (botonPulsado==cerrar) {
-	            	 Articulo.conexion.cerrarConexion();
-	            	 textareaconsulta.setText("conexion cerrada");}
-	            	 
-	           }
+	            
+		 }}}
 
 		
 	
-		}
+		
 	 

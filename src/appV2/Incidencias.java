@@ -6,6 +6,8 @@ import java.sql.SQLException;
 import java.util.Scanner;
 import javax.swing.JFrame;
 
+import appV2.VentanaIncidencia.PanelNuevo;
+
 //para mostrar sólo los 50 últimos resultados de la base de datos
 //SELECT * FROM principal ORDER BY idprincipal DESC LIMIT 50
 
