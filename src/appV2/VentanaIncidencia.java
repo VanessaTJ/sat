@@ -3,8 +3,6 @@ package appV2;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
 import java.sql.*;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -30,16 +28,7 @@ public class VentanaIncidencia extends JFrame{
 		add(PanelNuevo);
 		
 	}
-	/*class FrameListener extends WindowAdapter
-	{
-	   public void windowClosing(WindowEvent e)
-	  {
-	   System.out.println("Cerrando la conexión...");
-	    conexion.cerrarConexion();
-	    System.exit(0);
-	  }
-		
-	}*/
+
 
 	static class PanelNuevo extends JPanel implements ActionListener {
 
