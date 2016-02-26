@@ -159,7 +159,7 @@ public class VentanaIncidencia extends JFrame{
 
 		tipocb = new JComboBox();
 		tipocb.setBounds(740,400,80,20);
-		//Incidencias.menuIncidencias();
+		Incidencias.menuIncidencias();
 		add(tipocb);
 		
 		resueltalb=new JLabel("resuelta");

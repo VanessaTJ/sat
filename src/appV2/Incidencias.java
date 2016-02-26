@@ -60,6 +60,7 @@ public class Incidencias {
 		}
 	}
 	
+	*/
 	public static void menuIncidencias(){
 		filas = VentanaPrincipal.conexion.getQuery("SELECT NombreIncidencia FROM tipoincidencia");
 		try {
@@ -70,7 +71,7 @@ public class Incidencias {
 		catch (SQLException e) {e.printStackTrace();
 		}
 	}
-	
+	/*
 	public static void menuUsuariosSat(){
 		filas = VentanaPrincipal.conexion.getQuery("SELECT nombre FROM personalsistemas");
 		try {
